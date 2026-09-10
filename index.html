@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier Norte — Estudio de Diseño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <span class="preloader__letter">A</span>
+      <span class="preloader__letter">T</span>
+      <span class="preloader__letter">E</span>
+      <span class="preloader__letter">L</span>
+      <span class="preloader__letter">I</span>
+      <span class="preloader__letter">E</span>
+      <span class="preloader__letter">R</span>
+      <span class="preloader__letter preloader__letter--accent">N</span>
+      <span class="preloader__letter preloader__letter--accent">O</span>
+      <span class="preloader__letter preloader__letter--accent">R</span>
+      <span class="preloader__letter preloader__letter--accent">T</span>
+      <span class="preloader__letter preloader__letter--accent">E</span>
+    </div>
+    <div class="preloader__bar"><span id="preloaderBar"></span></div>
+  </div>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navegación -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav__logo" data-magnetic>Atelier<span>Norte</span></a>
+    <nav class="nav__links">
+      <a href="#trabajo" class="nav__link" data-magnetic>Trabajo</a>
+      <a href="#estudio" class="nav__link" data-magnetic>Estudio</a>
+      <a href="#contacto" class="nav__link nav__link--cta" data-magnetic>Hablemos</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" id="heroBg"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal-line"><span>Diseño · Madrid — 40.4168° N</span></p>
+        <h1 class="hero__title">
+          <span class="hero__title-line"><span>Creamos marcas</span></span>
+          <span class="hero__title-line"><span>que respiran</span></span>
+          <span class="hero__title-line hero__title-line--italic"><span>silencio.</span></span>
+        </h1>
+        <div class="hero__footer">
+          <p class="hero__desc reveal-line"><span>Estudio independiente de identidad visual y diseño digital. Menos ruido, más intención.</span></p>
+          <a href="#trabajo" class="btn" data-magnetic><span class="btn__label">Ver proyectos</span><span class="btn__circle"></span></a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Desliza</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <span>Identidad Visual —</span><span>Diseño Web —</span><span>Dirección de Arte —</span><span>Editorial —</span>
+        <span>Identidad Visual —</span><span>Diseño Web —</span><span>Dirección de Arte —</span><span>Editorial —</span>
+      </div>
+    </div>
+
+    <!-- TRABAJO -->
+    <section class="work" id="trabajo">
+      <div class="section-head">
+        <h2 class="section-head__title"><span class="reveal-line"><span>Trabajo</span></span><span class="section-head__index">(01)</span></h2>
+      </div>
+      <div class="work__grid">
+        <article class="project" data-magnetic-soft>
+          <div class="project__media project__media--1"><div class="project__img" data-parallax></div></div>
+          <div class="project__info">
+            <h3>Casa Alba</h3>
+            <p>Identidad · Packaging — 2025</p>
+          </div>
+        </article>
+        <article class="project project--offset" data-magnetic-soft>
+          <div class="project__media project__media--2"><div class="project__img" data-parallax></div></div>
+          <div class="project__info">
+            <h3>Origen Studio</h3>
+            <p>Web · Motion — 2025</p>
+          </div>
+        </article>
+        <article class="project" data-magnetic-soft>
+          <div class="project__media project__media--3"><div class="project__img" data-parallax></div></div>
+          <div class="project__info">
+            <h3>Revista Umbral</h3>
+            <p>Editorial — 2024</p>
+          </div>
+        </article>
+        <article class="project project--offset" data-magnetic-soft>
+          <div class="project__media project__media--4"><div class="project__img" data-parallax></div></div>
+          <div class="project__info">
+            <h3>Terra Cerámica</h3>
+            <p>Identidad — 2024</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ESTUDIO -->
+    <section class="about" id="estudio">
+      <h2 class="section-head__title"><span class="reveal-line"><span>Estudio</span></span><span class="section-head__index">(02)</span></h2>
+      <p class="about__text" id="aboutText">
+        Somos un estudio pequeño a propósito. Creemos que el buen diseño no grita: susurra, ordena y permanece. Trabajamos con pocas marcas, con mucha atención.
+      </p>
+      <div class="about__stats">
+        <div class="stat"><span class="stat__num" data-count="12">0</span><span class="stat__label">Años</span></div>
+        <div class="stat"><span class="stat__num" data-count="87">0</span><span class="stat__label">Proyectos</span></div>
+        <div class="stat"><span class="stat__num" data-count="14">0</span><span class="stat__label">Premios</span></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+      <p class="contact__eyebrow reveal-line"><span>¿Tienes un proyecto?</span></p>
+      <a href="mailto:hola@ateliernorte.es" class="contact__mail" data-magnetic>hola@ateliernorte.es</a>
+      <div class="contact__row">
+        <p>Calle del Silencio 8, Madrid</p>
+        <div class="contact__socials">
+          <a href="#" data-magnetic>Instagram</a>
+          <a href="#" data-magnetic>Behance</a>
+          <a href="#" data-magnetic>LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Atelier Norte — Diseñado con calma.</p>
+    <a href="#inicio" class="footer__top" data-magnetic>Volver arriba ↑</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
